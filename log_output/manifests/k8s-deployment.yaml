@@ -16,3 +16,10 @@ spec:
         - name: log-output-py
           image: diamor/log-output-py:1.1
           imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
